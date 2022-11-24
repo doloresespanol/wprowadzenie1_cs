@@ -7,6 +7,24 @@
         mc:Ignorable="d"
         Title="KwadratWindows" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="center" Foreground="White" Background="Black">Bok</TextBlock>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="center" Foreground="White" Background="Black" Grid.Row="1">Obwód</TextBlock>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="center" Foreground="White" Background="Black" Grid.Row="2">Pole</TextBlock>
+        <TextBox Grid.Column="1" x:Name="liczba1" HorizontalAlignment="center" VerticalAlignment="center" Width="150"></TextBox>
+        <TextBox IsEnabled="False" Grid.Column="1" Grid.Row="1" x:Name="liczba2" HorizontalAlignment="center" VerticalAlignment="center" Width="150"></TextBox>
+        <TextBox IsEnabled="False" Grid.Column="1" Grid.Row="2" x:Name="liczba3" HorizontalAlignment="center" VerticalAlignment="center" Width="150"></TextBox>
+        <Button Grid.Row="3" Grid.ColumnSpan="2" Click="Oblicz_Click">Oblicz</Button>
+        <TextBlock x:Name="komunikattextblock" Foreground="Red" Grid.Column="2"></TextBlock>
     </Grid>
 </Window>

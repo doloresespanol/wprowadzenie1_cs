@@ -29,7 +29,7 @@ namespace wprowadzenie1
         private void Przepisz_Click(object sender, RoutedEventArgs e)
         {
             string tekst = tekstBox.Text.ToString();
-            //tekstBlock2 = tekst;
+            
         }
     
     }

@@ -23,5 +23,21 @@ namespace wprowadzenie1
         {
             InitializeComponent();
         }
+
+        private void Oblicz_Click(object sender, RoutedEventArgs e)
+        {
+            if (double.TryParse(liczba1.Text, out double a))
+            {
+                double pole = a * a;
+                double obwod = 4 * a;
+                komunikattextblock.Text = String.Empty;
+                liczba2.Text = obwod.ToString();
+                liczba3.Text = pole.ToString();
+            }
+            else
+            {
+                komunikattextblock.Text = "Wpisz dodatnią liczbę";
+            }
+        }
     }
 }

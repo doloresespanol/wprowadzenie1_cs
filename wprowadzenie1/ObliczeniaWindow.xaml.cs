@@ -30,7 +30,7 @@ namespace wprowadzenie1
             {
                 if(int.TryParse(liczba2.Text, out int b))
                 {
-                    int suma a + b;
+                    int suma = a + b;
                     MessageBox.Show(suma.ToString(), "Wynik", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
             }
