@@ -23,5 +23,22 @@ namespace wprowadzenie1
         {
             InitializeComponent();
         }
+
+        private void Oblicz_Click(object sender, RoutedEventArgs e)
+        {
+            if(int.TryParse(liczba1.Text, out int a))
+            {
+                if(int.TryParse(liczba2.Text, out int b))
+                {
+                    int suma a + b;
+                    MessageBox.Show(suma.ToString(), "Wynik", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+            }
+            else
+            {
+                //okno modalne ktore blokuje program do momentu klikniecia
+                MessageBox.Show("Musi być wypełniony formularz","Uwaga",MessageBoxButton.OK,MessageBoxImage.Error);
+            }
+        }
     }
 }
