@@ -10,27 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace wprowadzenie1
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Logika interakcji dla klasy ObliczeniaWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ObliczeniaWindow : Window
     {
-        public MainWindow()
+        public ObliczeniaWindow()
         {
             InitializeComponent();
-            tekstBlock.Text = "Jakiś tekst generowany C#";
         }
-
-        private void Przepisz_Click(object sender, RoutedEventArgs e)
-        {
-            string tekst = tekstBox.Text.ToString();
-            //tekstBlock2 = tekst;
-        }
-    
     }
 }

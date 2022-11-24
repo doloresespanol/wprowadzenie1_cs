@@ -119,10 +119,18 @@
         <Label FontWeight="Bold">
             jakis tekst w labelu
         </Label>
-		<TextBox x:Name="tekstBox" AcceptsReturn="true" TextWrapping="WrapWithOverflow" Language="pl-pl" SpellCheck.IsEnabled="True">
+        <TextBox x:Name="tekstBox" AcceptsReturn="true" TextWrapping="WrapWithOverflow" Language="pl-pl" SpellCheck.IsEnabled="True">
 			początkowy tekst
-		</TextBox>
-        <Button Content="Przycisk"></Button>
+		</TextBox>  
+        <TextBlock x:Name="tekstBlock2"></TextBlock>
+        <TextBlock x:Name="tekstBlock3" Text="{Binding ElementName=tekstBox, Path=Text}"></TextBlock>
+        <Button Content="Przycisk" Click="Przepisz_Click"></Button>
+        <Button HorizontalAlignment="Center">
+            <StackPanel Orientation="Horizontal">
+            <Image Source="Resources/pobrane.png" Width="20" Height="20"/>
+                <TextBlock>Save</TextBlock>
+            </StackPanel>
+        </Button>
     </StackPanel>
 	
 </Window>
